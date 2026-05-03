@@ -1,25 +1,129 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-      --font-azarmehr: var(--font-azarmehr);
+  --background: lab(100% 0 0);
+  --foreground: lab(2.51107% 0.242703 -0.886115);
+  --card: lab(100% 0 0);
+  --card-foreground: lab(2.51107% 0.242703 -0.886115);
+  --popover: lab(100% 0 0);
+  --popover-foreground: lab(2.51107% 0.242703 -0.886115);
+  --primary: lab(8.30603% 0.618205 -2.16572);
+  --primary-foreground: lab(98.26% 0 0);
+  --secondary: lab(96.1634% 0.0993311 -0.364041);
+  --secondary-foreground: lab(8.30603% 0.618205 -2.16572);
+  --muted: lab(96.1634% 0.0993311 -0.364041);
+  --muted-foreground: lab(47.8878% 1.65477 -5.77283);
+  --accent: lab(8.30603% 0.618205 -2.16572);
+  --accent-foreground: lab(98.26% 0 0);
+  --destructive: lab(48.4493% 77.4328 61.5452);
+  --border: lab(90.6853% 0.399232 -1.45452);
+  --input: lab(90.6853% 0.399232 -1.45452);
+  --ring: lab(65.6464% 1.53497 -5.42429);
+  --chart-1: lab(84.9837% 0.601262 -2.17986);
+  --chart-2: lab(47.8878% 1.65477 -5.77283);
+  --chart-3: lab(35.1166% 1.78212 -6.1173);
+  --chart-4: lab(26.8019% 1.35387 -4.68303);
+  --chart-5: lab(15.7305% 0.613764 -2.16959);
+  --sidebar: lab(98.26% 0 0);
+  --sidebar-foreground: lab(2.51107% 0.242703 -0.886115);
+  --sidebar-primary: lab(8.30603% 0.618205 -2.16572);
+  --sidebar-primary-foreground: lab(98.26% 0 0);
+  --sidebar-accent: lab(96.1634% 0.0993311 -0.364041);
+  --sidebar-accent-foreground: lab(8.30603% 0.618205 -2.16572);
+  --sidebar-border: lab(90.6853% 0.399232 -1.45452);
+  --sidebar-ring: lab(65.6464% 1.53497 -5.42429);
+  --font-azarmehr: "AzarMehrTest", sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-azarmehr: var(--font-azarmehr);
+}
+
+@font-face {
+  font-family: "AzarMehrTest";
+  src: url("/fonts/AzarMehr-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-azarmehr);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-azarmehr: var(--font-azarmehr);
   }
 }
 @font-face {
-  font-family: 'AzarMehrTest';
-  src: url('/fonts/AzarMehr-Regular.woff2') format('woff2');
+  font-family: "AzarMehrTest";
+  src: url("/fonts/AzarMehr-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }

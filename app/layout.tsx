@@ -1,24 +1,22 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local"
+import localFont from "next/font/local";
 import "./globals.css";
 
 const Azar = localFont({
   src: [
     {
-      path: '../public/fonts/AzarMehr-Regular.woff2',
-      weight: '400',
-      style: 'normal',
+      path: "../public/fonts/AzarMehr-Regular.woff2",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../public/fonts/AzarMehr-Bold.woff2',
-      weight: '700',
-      style: 'normal',
+      path: "../public/fonts/AzarMehr-Bold.woff2",
+      weight: "700",
+      style: "normal",
     },
   ],
-  variable: '--font-azarmehr',
-  display: 'swap',
+  display: "swap",
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -31,11 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${Azar.className}  h-full antialiased`}
-    >
-      <body className="flex flex-col min-h-full">{children}</body>
+    <html dir="rtl" lang="en" className={`${Azar.className} h-full antialiased`}>
+      <body className="flex flex-col min-h-full">
+        <div className="flex flex-col gap-16 mx-auto max-w-6xl container">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
