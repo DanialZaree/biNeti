@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import SystemOs from "./components/SystemOs";
 import Services from "./components/Services";
 import Document from "./components/Document";
+import Similar from "./components/Similar";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <SystemOs/>
         <Services/>
         <Document/>
+        <Similar/>
     </div>
   );
 }
