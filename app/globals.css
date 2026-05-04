@@ -81,6 +81,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-azarmehr);
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {

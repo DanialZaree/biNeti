@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import SystemOs from "./components/SystemOs";
 import Services from "./components/Services";
+import Document from "./components/Document";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero/>
         <SystemOs/>
         <Services/>
+        <Document/>
     </div>
   );
 }

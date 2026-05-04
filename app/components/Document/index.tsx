@@ -4,113 +4,99 @@ import { AppWindow } from "lucide-react";
 
 const products = [
   {
-    id: 1,
-    name: "Excalidraw",
+    id: 12,
+    name: "TailwindCSS",
     description:
-      "تخته وایت‌بردی که باهاش می‌تونید به راحتی نمودار و وایرفریم‌ و با یک حس دست‌نویس بودن رسم کنید.",
-    image: "/img/Excalidraw.avif",
-    alt: "Excalidraw Cover",
-    link: "https://excalidraw.hxlab.ir/",
+      "فریمورک CSS قدرتمند و utility-first برای ساخت UI های مدرن و سریع.",
+    image: "/img/Tailwind.avif",
+    alt: "TailwindCSS Cover",
+    link: "https://tailwind.hxdocs.ir/",
   },
   {
-    id: 2,
-    name: "BentoPDF",
+    id: 13,
+    name: "Astro",
     description:
-      "مجموعه ابزارهای مرتبط با PDF. مرج کردن، جدا کردن، تبدیل کردن و غیره.",
-    image: "/img/PDF.avif",
-    alt: "BentoPDF Cover",
-    link: "https://pdf.hxlab.ir/",
+      "فریمورک وب مدرن برای ساخت سایت‌های سریع با Island Architecture.",
+    image: "/img/Astro.avif",
+    alt: "Astro Cover",
+    link: "https://astro.hxdocs.ir/",
   },
   {
-    id: 3,
-    name: "VERT",
+    id: 14,
+    name: "Vue",
     description:
-      "وب‌اپلیکیشن تبدیل فرمت فایل‌ها بطور کامل در مرورگر امن خودتون.",
-    image: "/img/VERT.avif",
-    alt: "VERT Cover",
-    link: "https://vert.hxlab.ir/",
+      "فریمورک جاوااسکریپت پیشرو برای ساخت UI های تعاملی و reactive.",
+    image: "/img/Vue.avif",
+    alt: "Vue Cover",
+    link: "https://vue.hxdocs.ir/",
   },
   {
-    id: 4,
-    name: "MonkeyType",
-    description: "وب‌اپلیکیشن تمرین و تست سرعت تایپ",
-    image: "/img/Type.avif",
-    alt: "MonkeyType Cover",
-    link: "https://type.hxlab.ir/",
-  },
-  {
-    id: 5,
-    name: "Moodist",
-    description: "صداهای محیطی برای بهبود تمرکز و آرامش.",
-    image: "/img/Moodist.avif",
-    alt: "Moodist Cover",
-    link: "https://moodist.hxlab.ir/",
-  },
-  {
-    id: 6,
-    name: "Screego",
+    id: 15,
+    name: "Hono",
     description:
-      "اشتراک گذاری صفحه‌تون با هرکسی که آیدی سِشِن رو بدونه! خیلی سریع، روون و ساده.",
-    image: "/img/Screego.avif",
-    alt: "Screego Cover",
-    link: "https://screego.hxlab.ir/",
+      "فریمورک وب فوق‌سریع و سبک برای Node.js، Cloudflare Workers و Deno.",
+    image: "/img/Hono.avif",
+    alt: "Hono Cover",
+    link: "https://hono.hxlab.ir/",
   },
   {
-    id: 7,
-    name: "DrawIO",
-    description: "وب‌اپلیکیشن حرفه‌ای برای رسم انواع دیاگرام‌ها.",
-    image: "/img/DrawIO.avif",
-    alt: "DrawIO Cover",
-    link: "https://drawio.hxlab.ir/",
+    id: 16,
+    name: "MDN Web Docs",
+    description: "داکیومنتیشن جامع MDN برای html و css و js.",
+    image: "/img/MDN.avif",
+    alt: "MDN Web Docs Cover",
+    link: "https://mdn.hxlab.ir/",
   },
   {
-    id: 8,
-    name: "Icones",
-    description: "کالکشن خیلی بزرگ و کامل از آیکون‌ها.",
-    image: "/img/Icones.avif",
-    alt: "Icones Cover",
-    link: "https://icones.hxlab.ir/",
-  },
-  {
-    id: 9,
-    name: "IT Tools",
+    id: 17,
+    name: "DevDocs",
     description:
-      "یه مجموعه‌ی خیلی بزرگ از ابزارهای دم دستی برای برنامه‌نویس‌ها و فعالان IT.",
-    image: "/img/IT-Tools.avif",
-    alt: "IT Tools Cover",
-    link: "https://it-tools.hxlab.ir/",
+      "وب‌اپلیکیشنی جامع از داکیومنتیشن بیش از 200 زبان، لایببری و فریمورک.",
+    image: "/img/DevDocs.avif",
+    alt: "DevDocs Cover",
+    link: "https://devdocs.hxlab.ir/",
   },
   {
-    id: 10,
-    name: "CyberChef",
+    id: 18,
+    name: "Wikipedia",
     description:
-      "یک وب‌اپلیکیشن برای رمزگذاری، کدگذاری، فشرده‌سازی و تجزیه و تحلیل داده‌ها.",
-    image: "/img/CyberChef.avif",
-    alt: "CyberChef Cover",
-    link: "https://cyberchef.hxlab.ir/",
+      "دائرة‌المعارف آزاد و آنلاین با میلیون‌ها مقاله در تمام زمینه‌ها به زبان‌های مختلف.",
+    image: "/img/Wikipedia.avif",
+    alt: "Wikipedia Cover",
+    link: "https://kiwix.bokhary.fun/viewer#wikipedia_fa_all_maxi_2026-01/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C",
   },
   {
-    id: 11,
-    name: "EchoIP",
-    description: "دریافت اطلاعات آیپی‌آدرستون.",
-    image: "/img/IP.avif",
-    alt: "EchoIP Cover",
-    link: "https://ip.hxlab.ir/",
+    id: 19,
+    name: "W3Schools",
+    description:
+      "آموزش تعاملی و کامل HTML، CSS، JavaScript، Python، SQL و صدها تکنولوژی وب.",
+    image: "/img/W3School.avif",
+    alt: "W3Schools Cover",
+    link: "https://w3schools.bokhary.fun/",
+  },
+  {
+    id: 20,
+    name: "Programming Docs",
+    description:
+      "مجموعه داکیومنتیشن‌های کامل زبان‌های برنامه‌نویسی و فریمورک‌های محبوب.",
+    image: "/img/progdocs.avif",
+    alt: "Programming Docs Cover",
+    link: "https://wiki.theazizi.ir/#lang=",
   },
 ];
 
-export default function Services() {
+export default function Document() {
   return (
     <section
       className="flex flex-col gap-4 mt-10 p-4 scroll-mt-22"
-      id="services"
+      id="document"
     >
       <div className="flex w-full">
         <span className="flex justify-center items-center p-2 border-2 border-border size-14">
           <AppWindow />
         </span>
         <div className="flex flex-col flex-1 justify-between">
-          <h2 className="my-auto pr-4 font-semibold text-lg">سرویس‌ها</h2>
+          <h2 className="my-auto pr-4 font-semibold text-lg">داکیومنت‌ها</h2>
           <div className="bg-linear-to-l to-transparent from-border w-full h-0.5"></div>
         </div>
       </div>
@@ -130,7 +116,7 @@ export default function Services() {
                 fetchPriority="low"
                 width={2560}
                 height={1440}
-    className="w-full h-full object-cover" 
+                className="w-full h-full object-cover"
               />
             </div>
             <div

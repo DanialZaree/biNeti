@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html dir="rtl" lang="en" className={`${Azar.className} h-full antialiased`}>
+    <html dir="rtl" lang="en" className={`${Azar.className} h-full antialiased scroll-smooth`}>
       <body className="flex flex-col min-h-full">
         <div className="flex flex-col gap-16 mx-auto max-w-6xl container">
           {children}
