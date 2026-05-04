@@ -1,5 +1,5 @@
 "use client"
-import { WifiOff, GlobeX, Menu } from "lucide-react";
+import {  GlobeX, Menu } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 

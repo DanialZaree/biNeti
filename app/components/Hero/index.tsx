@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative flex sm:flex-row-reverse flex-col justify-center items-center blur-in-sm h-72 animate-in duration-1000 fade-in-30">
+    <section className="relative flex sm:flex-row-reverse flex-col justify-center items-center blur-in-sm mt-12 h-72 animate-in duration-1000 fade-in-30">
       <div className="flex flex-col flex-1 justify-center items-center gap-6 text-center shrink-0">
         <h2 className="relative md:max-w-fit max-w-2xs sm:max-w-md font-bold text-3xl sm:text-5xl text-balance">
           <span>مجموعه‌ای از برنامه‌های کار راه بنداز</span>
