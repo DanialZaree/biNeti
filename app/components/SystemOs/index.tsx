@@ -53,7 +53,7 @@ export default function SystemOs() {
                 src={product.image}
                 alt={product.alt}
                 loading="lazy"
-                fetchPriority="auto"
+                fetchPriority="high"
                 width={2560}
                 height={1440}
                 className="w-full object-cover"
