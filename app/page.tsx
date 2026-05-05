@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="-top-6 absolute inset-x-0 place-self-center backdrop-blur-3xl w-full max-w-6xl h-80 animate-in duration-1000 fade-in">
+      <div className="-top-10 sm:top-0 absolute inset-x-0 place-self-center backdrop-blur-3xl w-full max-w-6xl h-80 animate-in duration-1000 fade-in">
   
   <Image 
     src="/img/pattern.svg" 
