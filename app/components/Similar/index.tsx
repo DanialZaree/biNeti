@@ -7,7 +7,7 @@ const products = [
   id: 21,
   name: "Bazitory",
   description: "آنلاین بازی کردن خیلی از بازی‌ها با اینترنت داخلی.",
-  image: "/img/Bazitory.avif",
+  image: "/img/bazitory.avif",
   alt: "Bazitory Cover",
   link: "https://bazitory.com/"
 },
@@ -15,7 +15,7 @@ const products = [
   id: 22,
   name: "DevNeeds",
   description: "مقایسه و جستجو بین تمامی میرورهای ایران + آموزش استفاده از میرورها و دسترسی به میرورهای پرسرعت.",
-  image: "/img/DevNeeds.avif",
+  image: "/img/devneeds.avif",
   alt: "DevNeeds Cover",
   link: "https://devneeds.ir/"
 },
@@ -23,7 +23,7 @@ const products = [
   id: 23,
   name: "Bokhary",
   description: "ارائه‌دهنده‌ی سرویس‌های ارتباطی و دیگر داکیومنتیشن‌ها.",
-  image: "/img/Bokhary.avif",
+  image: "/img/bokhary.avif",
   alt: "Bokhary Cover",
   link: "https://bokhary.fun/"
 },
@@ -31,7 +31,7 @@ const products = [
   id: 24,
   name: "Scorpian",
   description: "بهترین مخزن گیتهاب ایران با دسترسی سریع به پروژه‌های متن‌باز.",
-  image: "/img/Scorpian.avif",
+  image: "/img/scorpian.avif",
   alt: "Scorpian Cover",
   link: "https://scorpian.ir/"
 }

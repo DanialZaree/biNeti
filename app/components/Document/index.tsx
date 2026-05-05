@@ -8,7 +8,7 @@ const products = [
     name: "TailwindCSS",
     description:
       "فریمورک CSS قدرتمند و utility-first برای ساخت UI های مدرن و سریع.",
-    image: "/img/Tailwind.avif",
+    image: "/img/tailwind.avif",
     alt: "TailwindCSS Cover",
     link: "https://tailwind.hxdocs.ir/",
   },
@@ -17,7 +17,7 @@ const products = [
     name: "Astro",
     description:
       "فریمورک وب مدرن برای ساخت سایت‌های سریع با Island Architecture.",
-    image: "/img/Astro.avif",
+    image: "/img/astro.avif",
     alt: "Astro Cover",
     link: "https://astro.hxdocs.ir/",
   },
@@ -26,7 +26,7 @@ const products = [
     name: "Vue",
     description:
       "فریمورک جاوااسکریپت پیشرو برای ساخت UI های تعاملی و reactive.",
-    image: "/img/Vue.avif",
+    image: "/img/vue.avif",
     alt: "Vue Cover",
     link: "https://vue.hxdocs.ir/",
   },
@@ -35,7 +35,7 @@ const products = [
     name: "Hono",
     description:
       "فریمورک وب فوق‌سریع و سبک برای Node.js، Cloudflare Workers و Deno.",
-    image: "/img/Hono.avif",
+    image: "/img/hono.avif",
     alt: "Hono Cover",
     link: "https://hono.hxlab.ir/",
   },
@@ -43,7 +43,7 @@ const products = [
     id: 16,
     name: "MDN Web Docs",
     description: "داکیومنتیشن جامع MDN برای html و css و js.",
-    image: "/img/MDN.avif",
+    image: "/img/mdn.avif",
     alt: "MDN Web Docs Cover",
     link: "https://mdn.hxlab.ir/",
   },
@@ -52,7 +52,7 @@ const products = [
     name: "DevDocs",
     description:
       "وب‌اپلیکیشنی جامع از داکیومنتیشن بیش از 200 زبان، لایببری و فریمورک.",
-    image: "/img/DevDocs.avif",
+    image: "/img/devdocs.avif",
     alt: "DevDocs Cover",
     link: "https://devdocs.hxlab.ir/",
   },
@@ -61,7 +61,7 @@ const products = [
     name: "Wikipedia",
     description:
       "دائرة‌المعارف آزاد و آنلاین با میلیون‌ها مقاله در تمام زمینه‌ها به زبان‌های مختلف.",
-    image: "/img/Wikipedia.avif",
+    image: "/img/wikipedia.avif",
     alt: "Wikipedia Cover",
     link: "https://kiwix.bokhary.fun/viewer#wikipedia_fa_all_maxi_2026-01/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C",
   },
@@ -70,8 +70,8 @@ const products = [
     name: "W3Schools",
     description:
       "آموزش تعاملی و کامل HTML، CSS، JavaScript، Python، SQL و صدها تکنولوژی وب.",
-    image: "/img/W3School.avif",
-    alt: "W3Schools Cover",
+    image: "/img/w3school.avif",
+    alt: "w3schools Cover",
     link: "https://w3schools.bokhary.fun/",
   },
   {

@@ -13,7 +13,11 @@ export default function Navbar() {
     <>
       <header className="top-0 z-40 sticky slide-in-from-top mx-auto sm:p-4 w-full max-w-6xl transition-all animate-in duration-1000 ease-in-out container">
         <nav className="flex justify-between items-center bg-card backdrop-blur-md p-4 sm:border border-border border-b h-14 size-full overflow-hidden">
-          <Link className="flex items-center gap-2" href={"/"}>
+          <Link
+            className="flex items-center gap-2"
+            href={"https://donofa.ir/bineti/"}
+            target="_blank"
+          >
             <div>
               <GlobeX size={30} />
             </div>
@@ -79,7 +83,8 @@ export default function Navbar() {
           <li>
             <Link
               className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
-              href="/#donate"
+              href={"https://donofa.ir/bineti/"}
+              target="_blank"
             >
               حمایت
             </Link>
