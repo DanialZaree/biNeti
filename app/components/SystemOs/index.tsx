@@ -29,7 +29,7 @@ export default function SystemOs() {
   return (
     <section
       className="flex flex-col gap-4 p-4 scroll-mt-22"
-      id="operating-systems"
+      id="os"
     >
       <div className="flex w-full">
         <span className="flex justify-center items-center p-2 border-2 border-border size-14">
