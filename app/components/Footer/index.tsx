@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="group flex flex-col bg-background mt-16 border-border border-t w-full transition-all">
       <div className="gap-6 grid sm:grid-cols-3 mx-auto my-8 sm:my-16 px-4 max-w-6xl container">
-        <div className="flex flex-col flex-1 justify-between gap-16">
+        <div className="flex flex-col flex-1 justify-between items-center gap-16">
             <GlobeX size={120}/>
         </div>
         <div className="flex *:flex flex-col flex-1 not-sm:justify-self-center *:items-center gap-2 *:gap-2 not-sm:mx-auto *:w-fit *:hover:text-foreground *:text-muted-foreground *:text-nowrap *:transition-colors">
