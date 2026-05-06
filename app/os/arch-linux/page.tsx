@@ -1,6 +1,6 @@
 "use client"
 import Navbar from "@/app/components/Navbar";
-import { Copy, Check } from "lucide-react"; // Import Check icon for feedback
+import { Copy, Check } from "lucide-react"; 
 import { useState } from "react";
 
 export default function page() {

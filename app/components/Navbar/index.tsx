@@ -15,8 +15,7 @@ export default function Navbar() {
         <nav className="flex justify-between items-center bg-card backdrop-blur-md p-4 sm:border border-border border-b h-14 size-full overflow-hidden">
           <Link
             className="flex items-center gap-2"
-            href={"https://donofa.ir/bineti/"}
-            target="_blank"
+            href={"/"}
           >
             <div>
               <GlobeX size={30} />
@@ -43,7 +42,8 @@ export default function Navbar() {
             <li>
               <Link
                 className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:ring-2  aria-invalid:border-destructive/50 aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4"
-                href={"#"}
+              href={"https://donofa.ir/bineti/"}
+              target="_blank"
               >
                 حمایت
               </Link>
