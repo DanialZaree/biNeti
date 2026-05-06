@@ -30,7 +30,6 @@ export default function Home() {
         <Document />
         <Similar />
       </div>
-      <Footer />
     </>
   );
 }

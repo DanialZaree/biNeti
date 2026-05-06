@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Image from "next/image";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
 const Azar = localFont({
@@ -96,12 +99,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      dir="rtl"
-      lang="fa"
-      className={`${Azar.className} h-full antialiased scroll-smooth`}
-    >
-      <body className="flex flex-col min-h-full">{children}</body>
-    </html>
+    <>
+      <html
+        dir="rtl"
+        lang="fa"
+        className={`${Azar.className} h-full antialiased scroll-smooth scrollbar`}
+      >
+        <body className="flex flex-col min-h-full">
+          <div className="-top-10 sm:top-0 -z-10 absolute inset-x-0 place-self-center backdrop-blur-3xl w-full max-w-6xl h-80 animate-in duration-1000 fade-in">
+            <Image
+              src="/img/pattern.svg"
+              className="absolute inset-0 opacity-40 w-full h-full mix-blend-soft-light"
+              width={1080}
+              height={240}
+              loading="eager"
+              fetchPriority="high"
+              alt="pattern svg"
+            />
+          </div>
+          {children}
+        </body>
+      </html>
+      <Footer />
+    </>
   );
 }

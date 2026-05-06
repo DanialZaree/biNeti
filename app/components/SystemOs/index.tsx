@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Computer, LayoutDashboard } from "lucide-react";
 
 const products = [
@@ -7,6 +8,7 @@ const products = [
     name: "Arch Linux",
     description: "میرور Arch Linux",
     image: "/img/arch.avif",
+    link: "/os/arch-linux",
     alt: "Arch Linux Cover",
   },
   {
@@ -14,6 +16,7 @@ const products = [
     name: "Void Linux",
     description: "میرور و داکیومنتیشن Void Linux",
     image: "/img/void.avif",
+    link: "/os/void-linux",
     alt: "Void Linux Cover",
   },
   {
@@ -21,16 +24,14 @@ const products = [
     name: "CachyOS",
     description: "میرور CachyOS",
     image: "/img/cachyos.avif",
+    link: "/os/cachyos-linux",
     alt: "CachyOS Cover",
   },
 ];
 
 export default function SystemOs() {
   return (
-    <section
-      className="flex flex-col gap-4 p-4 scroll-mt-22"
-      id="os"
-    >
+    <section className="flex flex-col gap-4 p-4 scroll-mt-22" id="os">
       <div className="flex w-full">
         <span className="flex justify-center items-center p-2 border-2 border-border size-14">
           <Computer />
@@ -79,17 +80,15 @@ export default function SystemOs() {
             </div>
             <div
               data-slot="card-footer"
-              className="flex items-center gap-1 mt-auto px-8 group-data-[size=sm]/card:px-5 [.border-t]:pt-8 group-data-[size=sm]/card:[.border-t]:pt-5"
+              className="flex items-center mt-auto px-8 group-data-[size=sm]/card:px-5 [.border-t]:pt-8 group-data-[size=sm]/card:[.border-t]:pt-5"
             >
-              <button
-                type="button"
-                disabled={true}
-                data-slot="button"
-                className="group/button inline-flex items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([className*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 flex-1"
+              <Link
+                href={product.link}
+                target="_blank"
+                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
               >
-                <LayoutDashboard />
-                <span>بزودی...</span>
-              </button>
+                <span>ورود به {product.name}</span>
+              </Link>
             </div>
           </div>
         ))}
