@@ -22,6 +22,15 @@ const products = [
     link: "https://astro.hxdocs.ir/",
   },
   {
+    id: 210,
+    name: "BaseUi",
+    description:
+      "Base UI یک کتابخانه UI است برای فریمورک های محبوب جاوااسکریپت",
+    image: "/img/baseui.png",
+    alt: "baseui Docs Cover",
+    link: "https://baseui.figai.ir/react/overview/quick-start.html",
+  },
+  {
     id: 14,
     name: "Vue",
     description:
