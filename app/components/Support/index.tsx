@@ -20,7 +20,7 @@ export default function Support() {
           data-size="default"
           className="group/card flex flex-col justify-center items-center gap-6 data-[size=sm]:gap-5 bg-card bg-linear-190 from-pink-900/30 to-transparent shadow-sm mx-auto px-8 py-8 data-[size=sm]:py-5 has-[&gt;img:first-child]:pt-0 *:[img:first-child]:rounded-none *:[img:last-child]:rounded-none ring-1 ring-foreground/5 max-w-sm overflow-hidden text-card-foreground text-sm"
         >
-        <Heart size={50} fill="#fccee8"/>
+        <Heart size={50} fill="#fccee8" stroke="#fccee8"/>
           <h3 className="text-shadow-glow text-shadow-pink-950 font-bold text-pink-200 text-3xl">
             رضایت شما!
           </h3>
