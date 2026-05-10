@@ -30,6 +30,42 @@ const products = [
     alt: "baseui Docs Cover",
     link: "https://baseui.figai.ir/react/overview/quick-start.html",
   },
+    {
+    id: 211,
+    name: "Open WebUI",
+    description:
+      "Open WebUI یک رابط کاربری وب پیشرفته و متن‌باز برای مدل‌های زبانی بزرگ (LLM) است که قابلیت‌های غنی برای چت، مدیریت فایل و سفارشی‌سازی ارائه می‌دهد.",
+    image: "/img/openwebui.png",
+    alt: "Open WebUI Docs Cover",
+    link: "https://openwebuidocs.figai.ir/",
+  },
+  {
+    id: 212,
+    name: "Expo",
+    description:
+      "اکسپو (Expo) یک چارچوب و پلتفرم متن‌باز برای ساخت برنامه‌های موبایل با واکنش (React Native) است که فرآیند توسعه و استقرار را ساده می‌کند.",
+    image: "/img/expo.png",
+    alt: "Expo Docs Cover",
+    link: "https://expodocs.figai.ir/get-started/create-a-project/",
+  },
+  {
+    id: 213,
+    name: "T3 Stack",
+    description:
+      "تاریخچه تیک (T3 Stack) یک چارچوب جاوااسکریپت همه‌جانبه برای ساخت وب اپلیکیشن‌های مدرن است که از Next.js، tRPC، Tailwind CSS و Prisma استفاده می‌کند.",
+    image: "/img/t3.png",
+    alt: "T3 Stack Docs Cover",
+    link: "https://t3stackdocs.figai.ir/",
+  },
+  {
+    id: 214,
+    name: "Drizzle ORM",
+    description:
+      "دیزل (Drizzle) یک ORM و کوئری بیلدر سبک، نوع‌محور و سریع برای دیتابیس‌های SQL در جاوااسکریپت و تایپ‌اسکریپت است.",
+    image: "/img/drizzle.png",
+    alt: "Drizzle Docs Cover",
+    link: "https://drizzledocs.figai.ir/",
+  },
   {
     id: 14,
     name: "Vue",
