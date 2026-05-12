@@ -30,11 +30,10 @@ const products = [
     alt: "baseui Docs Cover",
     link: "https://baseui.figai.ir/react/overview/quick-start.html",
   },
-    {
+  {
     id: 211,
     name: "Open WebUI",
-    description:
-      "Open WebUI یک رابط کاربری وب پیشرفته و متن‌باز برای مدل‌های زبانی بزرگ (LLM) است که قابلیت‌های غنی برای چت، مدیریت فایل و سفارشی‌سازی ارائه می‌دهد.",
+    description: "رابط وب متن‌باز برای LLM با چت، مدیریت فایل و سفارشی‌سازی.",
     image: "/img/openwebui.png",
     alt: "Open WebUI Docs Cover",
     link: "https://openwebuidocs.figai.ir/",
@@ -42,8 +41,7 @@ const products = [
   {
     id: 212,
     name: "Expo",
-    description:
-      "اکسپو (Expo) یک چارچوب و پلتفرم متن‌باز برای ساخت برنامه‌های موبایل با واکنش (React Native) است که فرآیند توسعه و استقرار را ساده می‌کند.",
+    description: "چارچوب متن‌باز برای ساخت اپ‌های React Native با فرآیند ساده.",
     image: "/img/expo.png",
     alt: "Expo Docs Cover",
     link: "https://expodocs.figai.ir/get-started/create-a-project/",
@@ -51,8 +49,7 @@ const products = [
   {
     id: 213,
     name: "T3 Stack",
-    description:
-      "تاریخچه تیک (T3 Stack) یک چارچوب جاوااسکریپت همه‌جانبه برای ساخت وب اپلیکیشن‌های مدرن است که از Next.js، tRPC، Tailwind CSS و Prisma استفاده می‌کند.",
+    description: "چارچوب کامل با Next.js، tRPC، Tailwind و Prisma برای راحتی.",
     image: "/img/t3.png",
     alt: "T3 Stack Docs Cover",
     link: "https://t3stackdocs.figai.ir/",
@@ -60,11 +57,26 @@ const products = [
   {
     id: 214,
     name: "Drizzle ORM",
-    description:
-      "دیزل (Drizzle) یک ORM و کوئری بیلدر سبک، نوع‌محور و سریع برای دیتابیس‌های SQL در جاوااسکریپت و تایپ‌اسکریپت است.",
+    description: "ORM سبک و نوع‌محور برای دیتابیس‌های SQL.",
     image: "/img/drizzle.png",
     alt: "Drizzle Docs Cover",
     link: "https://drizzledocs.figai.ir/",
+  },
+  {
+    id: 215,
+    name: "ElysiaJS",
+    description: "فریمورک وب سریع با تایپینگ end-to-end و Bun.",
+    image: "/img/elysiajs.png",
+    alt: "ElysiaJS Cover",
+    link: "https://elysiajs.hxdocs.ir/",
+  },
+  {
+    id: 216,
+    name: "shadcn/ui",
+    description: "کامپوننت‌های UI قابل کپی با Tailwind CSS.",
+    image: "/img/shadcn.png",
+    alt: "shadcn/ui Cover",
+    link: "https://shadcn.hxdocs.ir/",
   },
   {
     id: 14,
