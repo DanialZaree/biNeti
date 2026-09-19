@@ -87,7 +87,7 @@ export default function Navbar() {
               type="button"
               aria-label="Toggle menu"
               data-slot="button"
-              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest uppercase transition-all outline-none select-none hover:bg-muted hover:text-foreground size-10 cursor-pointer"
+              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest uppercase transition-all outline-none select-none size-10 cursor-pointer"
             >
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
