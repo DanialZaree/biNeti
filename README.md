@@ -1,110 +1,71 @@
-<div align="center">
+# بی‌نتی (Bi Neti)
 
-# 🌐 بی‌نتی (Bi Neti)
-### مجموعه‌ای از برنامه‌ها، سرویس‌ها و مستندات کار‌راه‌انداز برای روزهای سخت
+> مجموعه‌ای از برنامه‌های کار راه بنداز — **رایگان، برای همه.**
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![GitHub](https://img.shields.io/badge/Developer-danialzaree-purple?style=flat-square&logo=github)](https://github.com/danialzaree)
-
-<br/>
+<br />
 
 ![پیش‌نمایش وب‌سایت بی‌نتی](./public/screenshot.png)
 
-</div>
+<br />
+
+## داستان پروژه
+
+این مجموعه در روزهای اختلال و قطعی اینترنت بین‌الملل، جهت دسترسی آسان و رایگان کاربران ایرانی به ابزارها و داکیومنت‌های حیاتی به‌صورت سلف‌هاست بر روی سرورهای داخلی میزبانی شده بود. هم‌اکنون پیوند تمامی ابزارها به وب‌سایت‌های مرجع و رسمی متصل شده‌اند.
 
 ---
 
-## 📖 درباره پروژه
+## بخش‌های وب‌سایت
 
-پروژه **بی‌نتی (Bi Neti)** در روزهای اختلال و قطعی اینترنت بین‌الملل در ایران با هدف فراهم آوردن دسترسی آزاد، سریع و بدون دغدغه برای برنامه‌نویسان، فعالان IT و کاربران ایرانی به ابزارها، داکیومنت‌ها و مخازن حیاتی لینوکس توسعه داده شد.
+### 🖥️ سیستم‌عامل‌ها
+راهنمای استفاده و اتصال به میرورهای رسمی توزیع‌های لینوکس:
+- **Arch Linux** — پیکربندی مخزن رسمی GeoDNS
+- **CachyOS** — مخازن بهینه‌سازی‌شده برای x86-64-v3 و v4
+- **Void Linux** — تنظیم سریع مخزن رسمی با `xmirror`
 
-در آن دوره، ابزارها و مستندات محبوب متن‌باز بر روی سرورهای داخلی به‌صورت سلف‌هاست (Self-Hosted) میزبانی شده بودند. هم‌اکنون این پروژه به عنوان یک هاب مرجع و منسجم، تمامی پیوندها را به مراجع اصلی و وب‌سایت‌های رسمی متصل کرده تا همواره در دسترس همگان باشد.
+### 🛠️ سرویس‌ها
+مجموعه‌ای از کاربردی‌ترین ابزارهای متن‌باز وب:
+- **Excalidraw** — وایت‌برد و رسم نمودار با حس دست‌نویس
+- **BentoPDF** — ابزارهای جامع ویرایش و تبدیل PDF
+- **VERT** — تبدیل فرمت‌های فایل درون مرورگر
+- **MonkeyType** — تست و تمرین سرعت تایپ
+- **Moodist** — صداهای محیطی برای تمرکز و آرامش
+- **Screego** — اشتراک‌گذاری سریع صفحه نمایش
+- **DrawIO** — طراحی دیاگرام‌ها و فلوچارت‌ها
+- **Icones** — کالکشن بزرگ آیکون‌های وکتور
+- **IT Tools** — ابزارهای کاربردی برنامه‌نویسی و شبکه
+- **CyberChef** — رمزگذاری، کدگذاری و تحلیل داده‌ها
+- **EchoIP** — اطلاعات آدرس آی‌پی
 
----
+### 📚 داکیومنت‌ها
+دسترسی به مستندات رسمی محبوب‌ترین تکنولوژی‌ها:
+- TailwindCSS, Astro, Base UI, Open WebUI, Expo, T3 Stack, Drizzle ORM, ElysiaJS, shadcn/ui, Vue, Hono, MDN Web Docs, DevDocs, Wikipedia, W3Schools
 
-## ✨ بخش‌ها و امکانات پروژه
-
-### 🖥️ ۱. راهنما و میرور سیستم‌عامل‌ها (OS Mirrors)
-دستورالعمل‌ها و پیکربندی‌های سریع برای تنظیم مخازن رسمی توزیع‌های پرکاربرد لینوکس:
-- **Arch Linux:** راهنمای استفاده از مخازن GeoDNS رسمی
-- **CachyOS:** راهنمای مخازن رسمی و بهینه‌سازی‌شده برای x86-64-v3 و v4
-- **Void Linux:** راهنمای تنظیم مخزن رسمی از طریق ابزار `xmirror` و دستی
-
-### 🛠️ ۲. سرویس‌ها و ابزارهای وب (Web Applications)
-مجموعه‌ای از ابزارهای آنلاین و کارآمد بدون نیاز به نصب:
-- **Excalidraw:** وایت‌برد و رسم دیاگرام با حس دست‌نویس
-- **BentoPDF:** ابزارهای جامع مدیریت و تبدیل PDF
-- **VERT:** ابزار تبدیل فرمت‌های فایل در محیط مرورگر (WASM)
-- **MonkeyType:** تست و تمرین سرعت تایپ
-- **Moodist:** صداهای محیطی برای تمرکز و آرامش
-- **Screego:** اشتراک‌گذاری امن و سریع صفحه نمایش
-- **DrawIO:** رسم انواع دیاگرام‌ها و فلوچارت‌های مهندسی
-- **Icones:** دسترسی به هزاران آیکون وکتور
-- **IT Tools:** مجموعه ابزارهای دم‌دستی برنامه‌نویسی و شبکه
-- **CyberChef:** تحلیل داده‌ها، رمزنگاری و کدگذاری
-- **EchoIP:** دریافت و بررسی اطلاعات آدرس IP
-
-### 📚 ۳. مستندات و داکیومنتیشن‌ها (Documentation Hub)
-دسترسی به راهنماها و مراجع رسمی فناوری‌های روز وب:
-- **Tailwind CSS**, **Astro**, **Base UI**, **Open WebUI**, **Expo**, **T3 Stack**, **Drizzle ORM**, **ElysiaJS**, **shadcn/ui**, **Vue.js**, **Hono**, **MDN Web Docs**, **DevDocs**, **Wikipedia**, **W3Schools**
-
-### 🤝 ۴. وب‌سایت‌ها و پلتفرم‌های همکار (Similar Projects)
-معرفی پلتفرم‌های جامعه متن‌باز و ابزارهای مشابه شامل:
-- **Bazitory**, **DevNeeds**, **Bokhary**, **Scorpian**
+### 🔗 وب‌سایت‌های مشابه
+معرفی پروژه‌ها و پلتفرم‌های مفید جامعه متن‌باز فارسی:
+- Bazitory, DevNeeds, Bokhary, Scorpian
 
 ---
 
-## 🛠️ تکنولوژی‌های به‌کار رفته
+## راه‌اندازی محلی
 
-- **فریمورک:** [Next.js 16](https://nextjs.org/) (App Router & Turbopack)
-- **کتابخانه UI:** [React 19](https://react.dev/)
-- **زبان:** [TypeScript](https://www.typescriptlang.org/)
-- **استایل‌دهی:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **مجموعه آیکون:** [Lucide React](https://lucide.dev/)
-- **فونت فارسی:** آذر‌مهر (AzarMehr) با لود بهینه
-
----
-
-## 🚀 راه‌اندازی و اجرای محلی
-
-۱. **کلون کردن مخزن:**
 ```bash
-git clone https://github.com/danialzaree/bineti.git
-cd bineti
-```
+# کلون مخزن
+git clone https://github.com/DanialZaree/biNeti.git
 
-۲. **نصب وابستگی‌ها:**
-```bash
+# نصب وابستگی‌ها
 npm install
-```
 
-۳. **اجرای نسخه توسعه:**
-```bash
+# اجرای نسخه توسعه
 npm run dev
-```
-سایت در آدرس [http://localhost:3000](http://localhost:3000) قابل مشاهده خواهد بود.
 
-۴. **تولید خروجی استاتیک (Production Build):**
-```bash
+# ساخت بیلد استاتیک
 npm run build
 ```
-خروجی استاتیک سازگار با تمامی وب‌سرورها (Nginx، Apache، Liara و GitHub Pages) در پوشه `out/` تولید می‌شود.
 
 ---
 
-## 👨‍💻 توسعه‌دهنده و سازنده
+## توسعه‌دهنده
 
-- **دانیال زارع (Danial Zaree)**
-  - گیت‌هاب: [@danialzaree](https://github.com/danialzaree)
-  - تلگرام: [@danialzaree0](https://t.me/danialzaree0)
+توسعه داده شده توسط [دانیال زارعی](https://github.com/danialzaree).
 
----
-
-## 📄 لایسنس
-
-این پروژه تحت لایسنس [MIT](LICENSE) منتشر شده است و استفاده از آن کاملاً آزاد و رایگان می‌باشد.
 
