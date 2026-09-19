@@ -95,7 +95,7 @@ export default function Navbar() {
         </nav>
       </header>
       <nav
-        className={`${menuOpen ? "sm:hidden top-14 z-30 fixed inset-x-0 px-4 py-8 w-full transition-all translate-y-0 duration-300 ease-in-out bg-card/95 backdrop-blur-lg border-b border-border shadow-xl" : "sm:hidden top-14 z-30 fixed inset-x-0 px-4 py-8 w-full transition-all -translate-y-full duration-300 ease-in-out"}`}
+        className={`${menuOpen ? "sm:hidden top-14 z-30 fixed inset-x-0 px-4 py-8 w-full transition-all translate-y-0 duration-300 ease-in-out bg-card/95 backdrop-blur-lg border-b border-border shadow-xl" : "sm:hidden z-30 fixed inset-x-0 px-4 py-8 w-full transition-all -translate-y-full duration-300 ease-in-out"}`}
       >
         <ul className="flex flex-col gap-4 w-full">
           <li>
