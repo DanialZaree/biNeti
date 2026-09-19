@@ -9,19 +9,22 @@ export default function Footer() {
         </div>
         <div className="flex *:flex flex-col flex-1 not-sm:justify-self-center *:items-center gap-2 *:gap-2 not-sm:mx-auto *:w-fit *:hover:text-foreground *:text-muted-foreground *:text-nowrap *:transition-colors">
           <h3 className="font-semibold text-foreground!">لینک‌های کاربردی</h3>
-          <a href="/#os">
+          <Link href="/#os">
             ● <span>سیستم‌عامل‌ها</span>
-          </a>
-          <a href="/#services">
+          </Link>
+          <Link href="/#services">
             ● <span>سرویس‌ها</span>
-          </a>
-          <a href="/#document">
+          </Link>
+          <Link href="/#document">
             ● <span>داکیومنتیشن‌ها</span>
-          </a>
+          </Link>
+          <Link href="/#support">
+            ● <span>حمایت و مشارکت</span>
+          </Link>
         </div>
         <div className="flex *:flex flex-col flex-1 not-sm:justify-self-center *:items-center gap-2 *:gap-2 not-sm:mx-auto *:w-fit *:hover:text-foreground *:text-muted-foreground *:text-nowrap *:transition-colors">
           <h3 className="font-semibold text-foreground!">راه‌های ارتباطی</h3>
-          <Link target="_blank" href="ts3server://bazitory.com">
+          <Link target="_blank" rel="noreferrer" href="https://github.com/danialzaree">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -39,7 +42,7 @@ export default function Footer() {
             </svg>
             <span>گیت‌هاب</span>
           </Link>
-          <Link target="_blank" href="https://t.me/danialzaree0">
+          <Link target="_blank" rel="noreferrer" href="https://t.me/danialzaree0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

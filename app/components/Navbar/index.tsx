@@ -1,5 +1,5 @@
 "use client";
-import { GlobeX, Menu } from "lucide-react";
+import { GlobeX, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <>
       <header className="top-0 z-40 sticky slide-in-from-top mx-auto sm:p-4 w-full max-w-6xl transition-all animate-in duration-1000 ease-in-out container">
-        <nav className="flex justify-between items-center bg-card backdrop-blur-md p-4 sm:border border-border border-b h-14 size-full overflow-hidden">
+        <nav className="flex justify-between items-center bg-card/80 backdrop-blur-md p-4 sm:border border-border border-b h-14 size-full overflow-hidden">
           <Link
             className="flex items-center gap-2"
             href={"/"}
@@ -25,7 +25,15 @@ export default function Navbar() {
           <ul className="not-sm:hidden flex gap-2">
             <li>
               <Link
-                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:ring-2  aria-invalid:border-destructive/50 aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 border-border bg-transparent hover:bg-border/50 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4"
+                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 border-border bg-transparent hover:bg-border/50 hover:text-foreground h-10 gap-1.5 px-5"
+                href={"/#os"}
+              >
+                سیستم‌عامل‌ها
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 border-border bg-transparent hover:bg-border/50 hover:text-foreground h-10 gap-1.5 px-5"
                 href={"/#services"}
               >
                 سرویس‌ها
@@ -33,7 +41,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:ring-2  aria-invalid:border-destructive/50 aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 border-border bg-transparent hover:bg-border/50 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4"
+                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 border-border bg-transparent hover:bg-border/50 hover:text-foreground h-10 gap-1.5 px-5"
                 href={"/#document"}
               >
                 داکیومنت‌ها
@@ -41,40 +49,43 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:ring-2  aria-invalid:border-destructive/50 aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4"
-              href={"https://donofa.ir/bineti/"}
-              target="_blank"
+                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-10 gap-1.5 px-6"
+                href={"https://github.com/danialzaree"}
+                target="_blank"
+                rel="noreferrer"
               >
-                حمایت
+                گیت‌هاب
               </Link>
             </li>
           </ul>
           <button
             onClick={menuHandler}
             type="button"
+            aria-label="Toggle menu"
             data-slot="button"
-            className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-3.5 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 size-11 sm:hidden"
+            className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest uppercase transition-all outline-none select-none hover:bg-muted hover:text-foreground size-11 sm:hidden cursor-pointer"
           >
-            <Menu />
+            {menuOpen ? <X /> : <Menu />}
           </button>
         </nav>
       </header>
       <nav
-        className={`${menuOpen ? "sm:hidden top-14 z-30 fixed inset-x-0 px-4 py-8 w-full transition-all translate-y-0 duration-300 ease-in-out bg-primary" : "sm:hidden top-14 z-30 fixed inset-x-0 px-4 py-8 w-full transition-all -translate-y-full  duration-300 ease-in-out"}`}
+        className={`${menuOpen ? "sm:hidden top-14 z-30 fixed inset-x-0 px-4 py-8 w-full transition-all translate-y-0 duration-300 ease-in-out bg-card/95 backdrop-blur-lg border-b border-border shadow-xl" : "sm:hidden top-14 z-30 fixed inset-x-0 px-4 py-8 w-full transition-all -translate-y-full duration-300 ease-in-out"}`}
       >
-        {" "}
         <ul className="flex flex-col gap-4 w-full">
           <li>
             <Link
-              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-3.5 border-border bg-transparent hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-input/30 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
-              href="/#document"
+              onClick={() => setMenuOpen(false)}
+              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-border bg-transparent hover:bg-muted hover:text-foreground text-xs font-semibold tracking-widest uppercase transition-all h-10 gap-1.5 px-6 w-full"
+              href="/#os"
             >
-              داکیومنت‌ها
+              سیستم‌عامل‌ها
             </Link>
           </li>
           <li>
             <Link
-              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-3.5 border-border bg-transparent hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-input/30 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
+              onClick={() => setMenuOpen(false)}
+              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-border bg-transparent hover:bg-muted hover:text-foreground text-xs font-semibold tracking-widest uppercase transition-all h-10 gap-1.5 px-6 w-full"
               href="/#services"
             >
               سرویس‌ها
@@ -82,17 +93,31 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
-              href={"https://donofa.ir/bineti/"}
-              target="_blank"
+              onClick={() => setMenuOpen(false)}
+              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-border bg-transparent hover:bg-muted hover:text-foreground text-xs font-semibold tracking-widest uppercase transition-all h-10 gap-1.5 px-6 w-full"
+              href="/#document"
             >
-              حمایت
+              داکیومنت‌ها
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setMenuOpen(false)}
+              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-primary-foreground text-primary hover:bg-primary-foreground/80 text-xs font-semibold tracking-widest uppercase transition-all h-10 gap-1.5 px-6 w-full"
+              href={"https://github.com/danialzaree"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              گیت‌هاب (danialzaree)
             </Link>
           </li>
         </ul>
       </nav>
       {menuOpen ? (
-        <div className="sm:hidden block top-0 z-10 fixed bg-background/50 backdrop-blur-lg w-full h-svh animate-in fade-in" />
+        <div
+          onClick={() => setMenuOpen(false)}
+          className="sm:hidden block top-0 z-10 fixed bg-background/50 backdrop-blur-lg w-full h-svh animate-in fade-in cursor-pointer"
+        />
       ) : null}
     </>
   );

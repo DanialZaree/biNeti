@@ -3,7 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import { Copy, Check } from "lucide-react";
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const copyToClipboard = (text: string, index: number) => {
@@ -21,7 +21,7 @@ export default function page() {
           <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center">
             CachyOS
           </h1>
-          <p className="text-lg">cachyos.hxcdn.ir</p>
+          <p className="text-lg text-muted-foreground">mirror.cachyos.org</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             id="SVGRoot"
@@ -75,7 +75,7 @@ export default function page() {
           <div className="flex flex-col gap-8 bg-card p-4 border border-border min-w-0">
             <div className="flex flex-col gap-2">
               <h2 className="font-heading font-semibold text-xl uppercase tracking-wider">
-                استفاده از میرور
+                استفاده از میرور رسمی
               </h2>
               <p className="text-muted-foreground">
                 برای استفاده از میرور CachyOS کافیه mirrorlist های داخل
@@ -92,7 +92,7 @@ export default function page() {
                   type="button"
                   onClick={() =>
                     copyToClipboard(
-                      "Server = https://cachyos.hxcdn.ir/repo/$arch/$repo",
+                      "Server = https://mirror.cachyos.org/repo/$arch/$repo",
                       0,
                     )
                   }
@@ -109,7 +109,7 @@ export default function page() {
                 <div className="flex items-center gap-3">
                   <span className="opacity-30 select-none">1</span>
                   <code className="text-nowrap">
-                    Server = https://cachyos.hxcdn.ir/repo/$arch/$repo
+                    Server = https://mirror.cachyos.org/repo/$arch/$repo
                   </code>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function page() {
                   type="button"
                   onClick={() =>
                     copyToClipboard(
-                      "Server = https://cachyos.hxcdn.ir/repo/$arch_v3/$repo",
+                      "Server = https://mirror.cachyos.org/repo/$arch_v3/$repo",
                       1,
                     )
                   }
@@ -141,7 +141,7 @@ export default function page() {
                 <div className="flex items-center gap-3">
                   <span className="opacity-30 select-none">1</span>
                   <code className="text-nowrap">
-                    Server = https://cachyos.hxcdn.ir/repo/$arch_v3/$repo
+                    Server = https://mirror.cachyos.org/repo/$arch_v3/$repo
                   </code>
                 </div>
               </div>
@@ -155,7 +155,8 @@ export default function page() {
                 <button
                   type="button"
                   onClick={() =>
-                    copyToClipboard(` Server = https://cachyos.hxcdn.ir/repo/$arch_v4/$repo`,
+                    copyToClipboard(
+                      "Server = https://mirror.cachyos.org/repo/$arch_v4/$repo",
                       2,
                     )
                   }
@@ -172,7 +173,7 @@ export default function page() {
                 <div className="flex items-center gap-3">
                   <span className="opacity-30 select-none">1</span>
                   <code className="text-nowrap">
-                    Server = https://cachyos.hxcdn.ir/repo/$arch_v4/$repo
+                    Server = https://mirror.cachyos.org/repo/$arch_v4/$repo
                   </code>
                 </div>
               </div>

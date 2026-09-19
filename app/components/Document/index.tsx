@@ -10,7 +10,7 @@ const products = [
       "فریمورک CSS قدرتمند و utility-first برای ساخت UI های مدرن و سریع.",
     image: "/img/tailwind.avif",
     alt: "TailwindCSS Cover",
-    link: "https://tailwind.hxdocs.ir/",
+    link: "https://tailwindcss.com/docs",
   },
   {
     id: 13,
@@ -19,7 +19,7 @@ const products = [
       "فریمورک وب مدرن برای ساخت سایت‌های سریع با Island Architecture.",
     image: "/img/astro.avif",
     alt: "Astro Cover",
-    link: "https://astro.hxdocs.ir/",
+    link: "https://docs.astro.build/",
   },
   {
     id: 210,
@@ -28,7 +28,7 @@ const products = [
       "Base UI یک کتابخانه UI است برای فریمورک های محبوب جاوااسکریپت",
     image: "/img/baseui.png",
     alt: "baseui Docs Cover",
-    link: "https://baseui.figai.ir/react/overview/quick-start.html",
+    link: "https://base-ui.com/",
   },
   {
     id: 211,
@@ -36,7 +36,7 @@ const products = [
     description: "رابط وب متن‌باز برای LLM با چت، مدیریت فایل و سفارشی‌سازی.",
     image: "/img/openwebui.png",
     alt: "Open WebUI Docs Cover",
-    link: "https://openwebuidocs.figai.ir/",
+    link: "https://docs.openwebui.com/",
   },
   {
     id: 212,
@@ -44,7 +44,7 @@ const products = [
     description: "چارچوب متن‌باز برای ساخت اپ‌های React Native با فرآیند ساده.",
     image: "/img/expo.png",
     alt: "Expo Docs Cover",
-    link: "https://expodocs.figai.ir/get-started/create-a-project/",
+    link: "https://docs.expo.dev/",
   },
   {
     id: 213,
@@ -52,7 +52,7 @@ const products = [
     description: "چارچوب کامل با Next.js، tRPC، Tailwind و Prisma برای راحتی.",
     image: "/img/t3.png",
     alt: "T3 Stack Docs Cover",
-    link: "https://t3stackdocs.figai.ir/",
+    link: "https://create.t3.gg/",
   },
   {
     id: 214,
@@ -60,7 +60,7 @@ const products = [
     description: "ORM سبک و نوع‌محور برای دیتابیس‌های SQL.",
     image: "/img/drizzle.png",
     alt: "Drizzle Docs Cover",
-    link: "https://drizzledocs.figai.ir/",
+    link: "https://orm.drizzle.team/",
   },
   {
     id: 215,
@@ -68,7 +68,7 @@ const products = [
     description: "فریمورک وب سریع با تایپینگ end-to-end و Bun.",
     image: "/img/elysiajs.avif",
     alt: "ElysiaJS Cover",
-    link: "https://elysiajs.hxdocs.ir/",
+    link: "https://elysiajs.com/",
   },
   {
     id: 216,
@@ -76,7 +76,7 @@ const products = [
     description: "کامپوننت‌های UI قابل کپی با Tailwind CSS.",
     image: "/img/shadcn.avif",
     alt: "shadcn/ui Cover",
-    link: "https://shadcn.hxdocs.ir/",
+    link: "https://ui.shadcn.com/",
   },
   {
     id: 14,
@@ -85,7 +85,7 @@ const products = [
       "فریمورک جاوااسکریپت پیشرو برای ساخت UI های تعاملی و reactive.",
     image: "/img/vue.avif",
     alt: "Vue Cover",
-    link: "https://vue.hxdocs.ir/",
+    link: "https://vuejs.org/",
   },
   {
     id: 15,
@@ -94,7 +94,7 @@ const products = [
       "فریمورک وب فوق‌سریع و سبک برای Node.js، Cloudflare Workers و Deno.",
     image: "/img/hono.avif",
     alt: "Hono Cover",
-    link: "https://hono.hxlab.ir/",
+    link: "https://hono.dev/",
   },
   {
     id: 16,
@@ -102,7 +102,7 @@ const products = [
     description: "داکیومنتیشن جامع MDN برای html و css و js.",
     image: "/img/mdn.avif",
     alt: "MDN Web Docs Cover",
-    link: "https://mdn.hxlab.ir/",
+    link: "https://developer.mozilla.org/",
   },
   {
     id: 17,
@@ -111,7 +111,7 @@ const products = [
       "وب‌اپلیکیشنی جامع از داکیومنتیشن بیش از 200 زبان، لایببری و فریمورک.",
     image: "/img/devdocs.avif",
     alt: "DevDocs Cover",
-    link: "https://devdocs.hxlab.ir/",
+    link: "https://devdocs.io/",
   },
   {
     id: 18,
@@ -120,7 +120,7 @@ const products = [
       "دائرة‌المعارف آزاد و آنلاین با میلیون‌ها مقاله در تمام زمینه‌ها به زبان‌های مختلف.",
     image: "/img/wikipedia.avif",
     alt: "Wikipedia Cover",
-    link: "https://kiwix.bokhary.fun/viewer#wikipedia_fa_all_maxi_2026-01/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C",
+    link: "https://fa.wikipedia.org/",
   },
   {
     id: 19,
@@ -129,7 +129,7 @@ const products = [
       "آموزش تعاملی و کامل HTML، CSS، JavaScript، Python، SQL و صدها تکنولوژی وب.",
     image: "/img/w3school.avif",
     alt: "w3schools Cover",
-    link: "https://w3schools.bokhary.fun/",
+    link: "https://www.w3schools.com/",
   },
   {
     id: 20,
@@ -138,7 +138,7 @@ const products = [
       "مجموعه داکیومنتیشن‌های کامل زبان‌های برنامه‌نویسی و فریمورک‌های محبوب.",
     image: "/img/progdocs.avif",
     alt: "Programming Docs Cover",
-    link: "https://wiki.theazizi.ir/#lang=",
+    link: "https://devdocs.io/",
   },
 ];
 
@@ -200,6 +200,7 @@ export default function Document() {
             >
               <Link
                 href={product.link}
+                referrerPolicy="no-referrer"
                 target="_blank"
                 className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
               >

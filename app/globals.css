@@ -121,16 +121,6 @@ body {
   --font-azarmehr: var(--font-azarmehr);
   }
 }
-@font-face {
-  font-family: "AzarMehrTest";
-  src: url("/fonts/AzarMehr-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-body {
-  background: var(--background);
-  color: var(--foreground);
-}
 .scrollbar {
   scrollbar-width: thin;
   scrollbar-color: #fff transparent;

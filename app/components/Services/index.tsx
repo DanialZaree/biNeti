@@ -10,7 +10,7 @@ const products = [
       "تخته وایت‌بردی که باهاش می‌تونید به راحتی نمودار و وایرفریم‌ و با یک حس دست‌نویس بودن رسم کنید.",
     image: "/img/excalidraw.avif",
     alt: "Excalidraw Cover",
-    link: "https://excalidraw.hxlab.ir/",
+    link: "https://excalidraw.com/",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const products = [
       "مجموعه ابزارهای مرتبط با PDF. مرج کردن، جدا کردن، تبدیل کردن و غیره.",
     image: "/img/pdf.avif",
     alt: "BentoPDF Cover",
-    link: "https://pdf.hxlab.ir/",
+    link: "https://bentopdf.com/",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const products = [
       "وب‌اپلیکیشن تبدیل فرمت فایل‌ها بطور کامل در مرورگر امن خودتون.",
     image: "/img/vert.avif",
     alt: "VERT Cover",
-    link: "https://vert.hxlab.ir/",
+    link: "https://github.com/VERT-sh/VERT",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const products = [
     description: "وب‌اپلیکیشن تمرین و تست سرعت تایپ",
     image: "/img/type.avif",
     alt: "MonkeyType Cover",
-    link: "https://type.hxlab.ir/",
+    link: "https://monkeytype.com/",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const products = [
     description: "صداهای محیطی برای بهبود تمرکز و آرامش.",
     image: "/img/moodist.avif",
     alt: "Moodist Cover",
-    link: "https://moodist.hxlab.ir/",
+    link: "https://moodist.app/",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const products = [
       "اشتراک گذاری صفحه‌تون با هرکسی که آیدی سِشِن رو بدونه! خیلی سریع، روون و ساده.",
     image: "/img/screego.avif",
     alt: "Screego Cover",
-    link: "https://screego.hxlab.ir/",
+    link: "https://screego.net/",
   },
   {
     id: 7,
@@ -61,7 +61,7 @@ const products = [
     description: "وب‌اپلیکیشن حرفه‌ای برای رسم انواع دیاگرام‌ها.",
     image: "/img/drawio.avif",
     alt: "DrawIO Cover",
-    link: "https://drawio.hxlab.ir/",
+    link: "https://app.diagrams.net/",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const products = [
     description: "کالکشن خیلی بزرگ و کامل از آیکون‌ها.",
     image: "/img/icones.avif",
     alt: "Icones Cover",
-    link: "https://icones.hxlab.ir/",
+    link: "https://icones.js.org/",
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ const products = [
       "یه مجموعه‌ی خیلی بزرگ از ابزارهای دم دستی برای برنامه‌نویس‌ها و فعالان IT.",
     image: "/img/it-tools.avif",
     alt: "IT Tools Cover",
-    link: "https://it-tools.hxlab.ir/",
+    link: "https://it-tools.tech/",
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ const products = [
       "یک وب‌اپلیکیشن برای رمزگذاری، کدگذاری، فشرده‌سازی و تجزیه و تحلیل داده‌ها.",
     image: "/img/cyberchef.avif",
     alt: "CyberChef Cover",
-    link: "https://cyberchef.hxlab.ir/",
+    link: "https://gchq.github.io/CyberChef/",
   },
   {
     id: 11,
@@ -95,7 +95,7 @@ const products = [
     description: "دریافت اطلاعات آیپی‌آدرستون.",
     image: "/img/ip.avif",
     alt: "EchoIP Cover",
-    link: "https://ip.hxlab.ir/",
+    link: "https://ifconfig.co/",
   },
 ];
 
@@ -130,7 +130,7 @@ export default function Services() {
                 fetchPriority="low"
                 width={2560}
                 height={1440}
-    className="w-full h-full object-cover" 
+                className="w-full h-full object-cover"
               />
             </div>
             <div
@@ -157,6 +157,7 @@ export default function Services() {
             >
               <Link
                 href={product.link}
+                referrerPolicy="no-referrer"
                 target="_blank"
                 className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
               >

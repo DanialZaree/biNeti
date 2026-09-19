@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Computer, LayoutDashboard } from "lucide-react";
+import { Computer } from "lucide-react";
 
 const products = [
   {
     id: 1,
     name: "Arch Linux",
-    description: "میرور Arch Linux",
+    description: "میرور رسمی و مخازن Arch Linux",
     image: "/img/arch.avif",
     link: "/os/arch-linux",
     alt: "Arch Linux Cover",
@@ -14,7 +14,7 @@ const products = [
   {
     id: 2,
     name: "Void Linux",
-    description: "میرور و داکیومنتیشن Void Linux",
+    description: "میرور رسمی و مخازن Void Linux",
     image: "/img/void.avif",
     link: "/os/void-linux",
     alt: "Void Linux Cover",
@@ -22,7 +22,7 @@ const products = [
   {
     id: 3,
     name: "CachyOS",
-    description: "میرور CachyOS",
+    description: "میرور رسمی و مخازن بهینه CachyOS",
     image: "/img/cachyos.avif",
     link: "/os/cachyos-linux",
     alt: "CachyOS Cover",
@@ -84,6 +84,7 @@ export default function SystemOs() {
             >
               <Link
                 href={product.link}
+                referrerPolicy="no-referrer"
                 className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-3.5 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-10 gap-1.5 px-6 has-data-[icon=inline-end]:pe-4 has-data-[icon=inline-start]:ps-4 w-full"
               >
                 <span>ورود به {product.name}</span>

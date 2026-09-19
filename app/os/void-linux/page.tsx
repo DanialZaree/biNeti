@@ -3,7 +3,7 @@ import Navbar from "@/app/components/Navbar";
 import { Copy, Check } from "lucide-react";
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const copyToClipboard = (text: string, index: number) => {
@@ -21,7 +21,7 @@ export default function page() {
           <h1 className="font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center">
             Void Linux
           </h1>
-          <p className="text-lg">void.hxcdn.ir</p>
+          <p className="text-lg text-muted-foreground">repo-default.voidlinux.org</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
@@ -36,12 +36,11 @@ export default function page() {
           <div className="flex flex-col gap-8 bg-card p-4 border border-border min-w-0">
             <div className="flex flex-col gap-2">
               <h2 className="font-heading font-semibold text-xl uppercase tracking-wider">
-                استفاده از میرور
+                استفاده از میرور رسمی با xmirror
               </h2>
               <p className="text-muted-foreground">
-                برای استفاده از میرور Void Linux ما دو راه دارید، یا با استفاده
-                از xmirror اون رو تغییر بدید و یا بصورت دستی که هر دو رو پایین
-                می‌تونید مشاهده کنید.
+                برای تنظیم و انتخاب سریع میرور رسمی Void Linux با استفاده از ابزار
+                xmirror دستور زیر را اجرا کنید.
               </p>
             </div>
 
@@ -53,7 +52,7 @@ export default function page() {
                 <button
                   type="button"
                   onClick={() =>
-                    copyToClipboard("xmirror -s https://void.hxcdn.ir", 0)
+                    copyToClipboard("xmirror -s https://repo-default.voidlinux.org", 0)
                   }
                   className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 cursor-pointer aria-expanded:bg-muted aria-expanded:text-foreground size-7 [&_svg:not([class*='size-'])]:size-3"
                 >
@@ -68,7 +67,7 @@ export default function page() {
                 <div className="flex items-center gap-3">
                   <span className="opacity-30 select-none">$</span>
                   <code className="text-nowrap">
-                    xmirror -s https://void.hxcdn.ir
+                    xmirror -s https://repo-default.voidlinux.org
                   </code>
                 </div>
               </div>
@@ -85,7 +84,7 @@ export default function page() {
                     copyToClipboard(
                       `mkdir -p /etc/xbps.d
 cp /usr/share/xbps.d/*-repository-*.conf /etc/xbps.d/
-sed -i 's|https://repo-default.voidlinux.org|https://void.hxcdn.ir|g' /etc/xbps.d/*-repository-*.conf`,
+sed -i 's|https://repo-default.voidlinux.org|https://repo-fastly.voidlinux.org|g' /etc/xbps.d/*-repository-*.conf`,
                       1,
                     )
                   }
@@ -112,9 +111,7 @@ sed -i 's|https://repo-default.voidlinux.org|https://void.hxcdn.ir|g' /etc/xbps.
                 <div className="flex items-center gap-3">
                   <span className="opacity-30 select-none">$</span>
                   <code className="text-nowrap">
-                    sed -i
-                    's|https://repo-default.voidlinux.org|https://void.hxcdn.ir|g'
-                    /etc/xbps.d/*-repository-*.conf
+                    sed -i &apos;s|https://repo-default.voidlinux.org|https://repo-fastly.voidlinux.org|g&apos; /etc/xbps.d/*-repository-*.conf
                   </code>
                 </div>
               </div>
