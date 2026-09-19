@@ -58,15 +58,40 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <button
-            onClick={menuHandler}
-            type="button"
-            aria-label="Toggle menu"
-            data-slot="button"
-            className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest uppercase transition-all outline-none select-none hover:bg-muted hover:text-foreground size-11 sm:hidden cursor-pointer"
-          >
-            {menuOpen ? <X /> : <Menu />}
-          </button>
+          <div className="sm:hidden flex items-center gap-2">
+            {!menuOpen && (
+              <Link
+                className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-wider whitespace-nowrap uppercase transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 bg-primary-foreground text-primary hover:bg-primary-foreground/80 h-9 gap-1.5 px-3.5"
+                href="https://github.com/danialzaree"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                >
+                  <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21" />
+                </svg>
+                <span>گیت‌هاب</span>
+              </Link>
+            )}
+            <button
+              onClick={menuHandler}
+              type="button"
+              aria-label="Toggle menu"
+              data-slot="button"
+              className="group/button inline-flex shrink-0 items-center justify-center rounded-none border border-transparent bg-clip-padding text-xs font-semibold tracking-widest uppercase transition-all outline-none select-none hover:bg-muted hover:text-foreground size-10 cursor-pointer"
+            >
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </nav>
       </header>
       <nav
