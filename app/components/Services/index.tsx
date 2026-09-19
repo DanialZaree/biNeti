@@ -8,7 +8,7 @@ const products = [
     name: "Excalidraw",
     description:
       "تخته وایت‌بردی که باهاش می‌تونید به راحتی نمودار و وایرفریم‌ و با یک حس دست‌نویس بودن رسم کنید.",
-    image: "/img/excalidraw.avif",
+    image: "/img/excalidraw.webp",
     alt: "Excalidraw Cover",
     link: "https://excalidraw.com/",
   },
@@ -51,7 +51,7 @@ const products = [
     name: "Screego",
     description:
       "اشتراک گذاری صفحه‌تون با هرکسی که آیدی سِشِن رو بدونه! خیلی سریع، روون و ساده.",
-    image: "/img/screego.avif",
+    image: "/img/screego.webp",
     alt: "Screego Cover",
     link: "https://screego.net/",
   },
@@ -59,7 +59,7 @@ const products = [
     id: 7,
     name: "DrawIO",
     description: "وب‌اپلیکیشن حرفه‌ای برای رسم انواع دیاگرام‌ها.",
-    image: "/img/drawio.avif",
+    image: "/img/drawio.webp",
     alt: "DrawIO Cover",
     link: "https://app.diagrams.net/",
   },
